@@ -3,28 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quality Legal Services - Юридические и нотариальные услуги</title>
+    <title>Quality Legal Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
-        <h1 class="site-title">Quality Legal Services</h1>
-        <p class="slogan">
-          «Надежное партнёрство, безопасные решения, гарантия законности – наш
-          ключ к Вашему успеху»
-        </p>
-        <a href="#contact" class="btn btn-contact">Связаться с нами</a>
+      <div class="container header-wrapper">
+        <div class="logo-title">
+          <img src="img/logo.svg" alt="Логотип QLS" class="site-logo" />
+        </div>
+        <a href="#contact" class="btn-icon" title="Консультация">
+          <i class="fas fa-headset"></i>
+        </a>
       </div>
-    </header>
 
+      <p class="slogan">
+        Надежное партнёрство, безопасные решения, гарантия законности – наш ключ
+        к Вашему успеху
+      </p>
+    </header>
+    <!-- Остальной код остается без изменений -->
     <main>
+      <section class="about">
+        <div class="container">
+          <h2>О Нас</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                QLS всегда стремится развиваться, обучать, помогать и выходить
+                за рамки стандартной нотариальной и юридической деятельности.
+              </p>
+              <p>
+                <strong>QLS это больше, чем нотариус и юристы.</strong
+                ><br /><strong>QLS это мы с Вами, мы за Вас!</strong>
+              </p>
+            </div>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <h3>Защищаем и помогаем гражданам PK за рубежом</h3>
+              </div>
+              <div class="highlight-item">
+                <h3>Проводим юридические ивенты</h3>
+              </div>
+              <div class="highlight-item">
+                <h3>Готовы расширить нашу команду</h3>
+              </div>
+              <div class="highlight-item">
+                <h3>
+                  Уникальный опыт обучения при поддержке Республиканской
+                  нотариальной палаты
+                </h3>
+              </div>
+              <div class="highlight-item">
+                <h3>
+                  <strong
+                    >Планируем открыть общественный фонд помощи
+                    матерям-одиночкам</strong
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="features">
         <div class="container">
           <h2>Преимущества QLS</h2>
@@ -107,49 +160,6 @@
         </div>
       </section>
 
-      <section class="about">
-        <div class="container">
-          <h2>О компании</h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p>
-                QLS всегда стремится развиваться, обучать, помогать и выходить
-                за рамки стандартной нотариальной и юридической деятельности.
-              </p>
-              <p>
-                <strong>QLS это больше, чем нотариус и юристы.</strong
-                ><br /><strong>QLS это мы с Вами, мы за Вас!</strong>
-              </p>
-            </div>
-            <div class="about-highlights">
-              <div class="highlight-item">
-                <h3>Защищаем и помогаем гражданам PK за рубежом</h3>
-              </div>
-              <div class="highlight-item">
-                <h3>Проводим юридические ивенты</h3>
-              </div>
-              <div class="highlight-item">
-                <h3>Готовы расширить нашу команду</h3>
-              </div>
-              <div class="highlight-item">
-                <h3>
-                  Уникальный опыт обучения при поддержке Республиканской
-                  нотариальной палаты
-                </h3>
-              </div>
-              <div class="highlight-item">
-                <h3>
-                  <strong
-                    >Планируем открыть общественный фонд помощи
-                    матерям-одиночкам</strong
-                  >
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="cta" id="contact">
         <div class="container">
           <h2>Свяжитесь с нами</h2>
@@ -158,37 +168,46 @@
             контакты, и мы свяжемся с вами в ближайшее время.
           </p>
           <button class="btn btn-contact" id="contactBtn">
-            Обратная связь
+            Консультация
           </button>
+          <a
+            href="https://wa.me/79152359995"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp"
+            title="Написать в WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
       </section>
     </main>
 
-    <div id="contactModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Форма обратной связи</h2>
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Имя</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Телефон</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Сообщение</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn">Отправить</button>
-        </form>
+  <div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Форма обратной связи</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required placeholder="Введите ваше имя" />
       </div>
-    </div>
+      <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Например: +7 999 123-45-67" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" required placeholder="Введите ваше сообщение"></textarea>
+      </div>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </div>
+</div>
 
     <footer class="site-footer">
       <div class="container">
